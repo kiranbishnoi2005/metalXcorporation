@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from './svg.svg';
+// import logo from './svg.svg';
 import { useDivision, DivisionType } from '../context/DivisionContext';
 
 export default function Header() {
@@ -31,10 +31,9 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-3">
               <img
-                src={logo}
-                alt="MetalXCorporation Logo"
-                className="h-8 w-auto"
-              />
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                  className="h-8 w-auto"
+                />
               <span className="text-white font-bold text-xl tracking-tight">
                 MetalXCorporation
               </span>
