@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Factory } from 'lucide-react';
+import logo from '../components/svg.svg';
 import { useDivision, DivisionType } from '../context/DivisionContext';
 
 export default function Header() {
@@ -30,11 +30,16 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-3">
-            <Factory className="h-8 w-8 text-blue-400" strokeWidth={1.5} />
-            <div>
-              <div className="text-white font-bold text-xl tracking-tight">MetalXCorporation</div>
-            </div>
-          </Link>
+              <img
+                src={logo}
+                alt="MetalXCorporation Logo"
+                className="h-8 w-auto"
+              />
+              <span className="text-white font-bold text-xl tracking-tight">
+                MetalXCorporation
+              </span>
+            </Link>
+
 
           <nav className="hidden lg:flex items-center space-x-1">
             {navLinks.map((link) => (
