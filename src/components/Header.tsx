@@ -11,7 +11,7 @@ export default function Header() {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
-    { path: '/services', label: division === 'scrap' ? 'Services' : 'Products' },
+    { path: '/services', label: division === 'scrap' ? 'Trading' : 'Trading' },
     { path: '/team', label: 'Team' },
     { path: '/clients', label: 'Clients' },
     { path: '/career', label: 'Career' },
@@ -33,7 +33,6 @@ export default function Header() {
             <Factory className="h-8 w-8 text-blue-400" strokeWidth={1.5} />
             <div>
               <div className="text-white font-bold text-xl tracking-tight">MetalXCorporation</div>
-              <div className="text-gray-400 text-xs tracking-wide">(OPC) PRIVATE LIMITED</div>
             </div>
           </Link>
 
@@ -63,7 +62,7 @@ export default function Header() {
                     : 'text-gray-400 hover:text-white'
                 }`}
               >
-                Scrap Division
+                MetalX
               </button>
               <button
                 onClick={() => setDivision('wheels')}
@@ -73,7 +72,7 @@ export default function Header() {
                     : 'text-gray-400 hover:text-white'
                 }`}
               >
-                Wheels & Axle
+                Wheels Axle
               </button>
             </div>
           </div>
@@ -101,7 +100,7 @@ export default function Header() {
                       : 'bg-gray-800 text-gray-400'
                   }`}
                 >
-                  Scrap Division
+                  MetalX
                 </button>
                 <button
                   onClick={() => setDivision('wheels')}
@@ -111,7 +110,7 @@ export default function Header() {
                       : 'bg-gray-800 text-gray-400'
                   }`}
                 >
-                  Wheels & Axle
+                  Wheels Axle
                 </button>
               </div>
             </div>
