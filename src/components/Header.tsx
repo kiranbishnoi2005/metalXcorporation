@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../components/svg.svg';
+import logo from './svg.svg';
 import { useDivision, DivisionType } from '../context/DivisionContext';
 
 export default function Header() {
