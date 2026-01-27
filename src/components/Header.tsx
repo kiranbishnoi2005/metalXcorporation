@@ -31,7 +31,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-3">
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                src="https://picsum.photos/40"
                 alt="MetalXCorporation Logo"
                 className="h-8 w-8 object-contain"
               />
