@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-// import { Menu, X, Factory } from 'lucide-react';
+import { Menu, X, Factory } from 'lucide-react';
 import { useDivision, DivisionType } from '../context/DivisionContext';
 
 export default function Header() {
@@ -30,11 +30,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-3">
-            <img
-                src="https://picsum.photos/40"
-                alt="MetalXCorporation Logo"
-                className="h-8 w-8 object-contain"
-              />
+            <Factory className="h-8 w-8 text-blue-400" strokeWidth={1.5} />
             <div>
               <div className="text-white font-bold text-xl tracking-tight">MetalXCorporation</div>
             </div>
